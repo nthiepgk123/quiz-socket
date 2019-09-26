@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #33343a;
+    font-weight: bold;
+    color: white;
+    background: url(hoa1.jpg);
+    width: 100%;
+    display: inline-flexbox;
+}
+
+.center_div{
+    margin: 0 auto;
+    width:80% /* value of your choice which suits your alignment */
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+
+ .btn-pink{
+     background-color: red;
+ }
+
+ #loginForm{
+        margin: auto;
+        width: 30% !important; 
+ }
+
+ #btnStar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 200px;
+    height: 200px;
+    background: #ffc107;
+    border-radius: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 55px;
+    border: 5px solid white;
+}
+
+ .header {
+    background-color: none;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid white;
+    border-radius: 2em / 5em;
+  }
+
+.name{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.conga{
+    margin:0 auto;
+}
+
+.cart-question{
+    border: 2px solid white;
+    width: 80%;
+    margin-left: 10%;
+    height: auto;
+    padding: 25px;
+    color: rgb(236, 228, 228);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #4267b2;
+}
+.cart{
+    
+    bottom: 20%;
+}
+.background-body{
+    height: auto;
+}
+
+.new1{
+    border: 1px solid white;
+}
+
+#playForm{
+    height: auto;
+}
+ @media screen and (max-width: 600px) {
+    #loginForm{
+        margin: auto;
+        width: 80% !important; 
+    }
+
+    .cart-question{
+        font-size: 10px;
+    }
+
+    .header{
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .footer{
+        padding: 3px;
+        font-size: 10px;
+    }
+    h2{
+        font-size: 15px;
+    }
+
+    #btnStar{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        width: 100px;
+        height: 100px;
+        background: none;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        border: 5px solid white;
+    }
+    .name{
+        font-size: 15px;
+    }
+    .cart-question{
+        padding: 5px;
+        height: 30%;
+        
+    }
+
+    #cauhoi{
+        font-size: 15px;
+    }
+    body{
+        background: url(skynight.jpg);
+    }
+}
+
+ 

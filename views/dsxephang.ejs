@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Ray Quiz</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+    <script src="https://nguyenhiep.herokuapp.com/socket.io/socket.io.js"></script>
+    <script src="xuly.js"></script>
+    <script>
+
+        var socket = io("https://nguyenhiep.herokuapp.com");
+        socket.on("server-quanlydanhsach", function (data) {
+            $("#user").html("");
+            var stt = 1;
+            data.map(function (data) {
+                $("#user").append(
+                    `<tr><td>` + stt + `</td><td>` + data.USER + `</td>` + `<td>` + data.NUMBER + `</td>` + '<td>' + data.DIEM + `</td></tr>`
+                );
+                stt = stt + 1;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wapper">
+            <h2 class="bangxephang"><img src="cup.png" alt="" width="140px">   RESULT   <img src="cup.png" alt="" width="140px"></h2>
+            <br>
+
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">User Name</th>
+                        <th scope="col">number of questions</th>
+                        <th scope="col">Scores</th>
+                    </tr>
+                </thead>
+                <tbody id="user">
+
+                </tbody>
+            </table>
+
+            <div id="hiep"></div>
+        </div>
+    </div>
+</body>
+
+</html>
